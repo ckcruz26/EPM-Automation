@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-22T22:03:06.596290" rpa="false" schemaversion="5">
+<suite id="s1" name="ForgotPW" source="C:\Users\ckcruz_pc\Documents\robotEnv\projectTest\test\forgotPW\ForgotPW.robot">
+<test id="s1-t1" name="[EPM_FORGOT_PW_001]" line="11">
+<try>
+<branch type="TRY">
+<kw name="Open WebApp using Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:06.976679" level="INFO">Opening browser 'Edge' to base url 'https://172.31.32.64/registration_pilot/forgot/forgot_password.php'.</msg>
+<arg>${baseURL}</arg>
+<arg>${browserName}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T22:03:06.976403" elapsed="2.250976"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T22:03:09.227681" elapsed="0.039378"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:06.975583" elapsed="2.291632"/>
+</kw>
+<kw name="InputValue">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:09.268168" level="INFO">Typing text '12456' into text field 'xpath=//*[@id="empno"]'.</msg>
+<arg>xpath=//*[@id="empno"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:09.267772" elapsed="0.223091"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:09.491295" level="INFO">Typing text 'cruzchristiankeirre7675@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:09.491058" elapsed="0.195143"/>
+</kw>
+<arg>12456</arg>
+<arg>cruzchristiankeirre7675@gmail.com</arg>
+<status status="PASS" start="2024-11-22T22:03:09.267423" elapsed="0.418910"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:09.687123" level="INFO">Clicking button 'xpath=/html/body/div[2]/div[2]/form/div[4]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/form/div[4]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:09.686871" elapsed="0.104931"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:09.686510" elapsed="0.105448"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T22:03:14.792708" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T22:03:09.792168" elapsed="5.000659"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:06.975186" elapsed="7.817732"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error</pattern>
+<kw name="Fatal Error" owner="BuiltIn">
+<doc>Stops the whole test execution.</doc>
+<status status="NOT RUN" start="2024-11-22T22:03:14.793200" elapsed="0.000040"/>
+</kw>
+<status status="NOT RUN" start="2024-11-22T22:03:14.793034" elapsed="0.000272"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T22:03:14.793507" elapsed="2.167096"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:14.793396" elapsed="2.167310"/>
+</branch>
+<status status="PASS" start="2024-11-22T22:03:06.975135" elapsed="9.985648"/>
+</try>
+<tag>EPM_FORGOT_PW_001</tag>
+<status status="PASS" start="2024-11-22T22:03:06.974767" elapsed="9.986350"/>
+</test>
+<test id="s1-t2" name="[EPM_FORGOT_PW_002]" line="24">
+<try>
+<branch type="TRY">
+<kw name="Open WebApp using Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:16.962695" level="INFO">Opening browser 'Edge' to base url 'https://172.31.32.64/registration_pilot/forgot/forgot_password.php'.</msg>
+<arg>${baseURL}</arg>
+<arg>${browserName}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T22:03:16.962462" elapsed="2.371192"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T22:03:19.333941" elapsed="0.039364"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:16.962195" elapsed="2.411296"/>
+</kw>
+<kw name="InputValue">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:19.374963" level="INFO">Typing text '' into text field 'xpath=//*[@id="empno"]'.</msg>
+<arg>xpath=//*[@id="empno"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:19.374658" elapsed="0.196916"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:19.572067" level="INFO">Typing text 'cruzchristiankeirre7675@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:19.571802" elapsed="0.233726"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>cruzchristiankeirre7675@gmail.com</arg>
+<status status="PASS" start="2024-11-22T22:03:19.373749" elapsed="0.431911"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:19.806392" level="INFO">Clicking button 'xpath=/html/body/div[2]/div[2]/form/div[4]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/form/div[4]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:19.806225" elapsed="0.112932"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:19.805930" elapsed="0.113394"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T22:03:24.919756" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T22:03:19.919506" elapsed="5.000355"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:16.962058" elapsed="7.957882"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error</pattern>
+<kw name="Fatal Error" owner="BuiltIn">
+<doc>Stops the whole test execution.</doc>
+<status status="NOT RUN" start="2024-11-22T22:03:24.920162" elapsed="0.000033"/>
+</kw>
+<status status="NOT RUN" start="2024-11-22T22:03:24.920024" elapsed="0.000215"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T22:03:24.920393" elapsed="2.182220"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:24.920303" elapsed="2.182408"/>
+</branch>
+<status status="PASS" start="2024-11-22T22:03:16.962018" elapsed="10.140755"/>
+</try>
+<tag>EPM_FORGOT_PW_002</tag>
+<status status="PASS" start="2024-11-22T22:03:16.961664" elapsed="10.141454"/>
+</test>
+<test id="s1-t3" name="[EPM_FORGOT_PW_003]" line="37">
+<try>
+<branch type="TRY">
+<kw name="Open WebApp using Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:27.104708" level="INFO">Opening browser 'Edge' to base url 'https://172.31.32.64/registration_pilot/forgot/forgot_password.php'.</msg>
+<arg>${baseURL}</arg>
+<arg>${browserName}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T22:03:27.104463" elapsed="2.414265"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T22:03:29.519009" elapsed="0.046112"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:27.104184" elapsed="2.461461"/>
+</kw>
+<kw name="InputValue">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:29.567326" level="INFO">Typing text '12456' into text field 'xpath=//*[@id="empno"]'.</msg>
+<arg>xpath=//*[@id="empno"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:29.566969" elapsed="0.308964"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:29.876496" level="INFO">Typing text '' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:29.876173" elapsed="0.084334"/>
+</kw>
+<arg>12456</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2024-11-22T22:03:29.565955" elapsed="0.394695"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:29.961300" level="INFO">Clicking button 'xpath=/html/body/div[2]/div[2]/form/div[4]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/form/div[4]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:29.961116" elapsed="0.119230"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:29.960839" elapsed="0.119628"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T22:03:35.081145" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T22:03:30.080605" elapsed="5.000669"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:27.104015" elapsed="7.977357"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error</pattern>
+<kw name="Fatal Error" owner="BuiltIn">
+<doc>Stops the whole test execution.</doc>
+<status status="NOT RUN" start="2024-11-22T22:03:35.081636" elapsed="0.000041"/>
+</kw>
+<status status="NOT RUN" start="2024-11-22T22:03:35.081472" elapsed="0.000263"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T22:03:35.081925" elapsed="2.194985"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:35.081811" elapsed="2.195199"/>
+</branch>
+<status status="PASS" start="2024-11-22T22:03:27.103974" elapsed="10.173101"/>
+</try>
+<tag>EPM_FORGOT_PW_003</tag>
+<status status="PASS" start="2024-11-22T22:03:27.103668" elapsed="10.173749"/>
+</test>
+<test id="s1-t4" name="[EPM_FORGOT_PW_005]" line="50">
+<try>
+<branch type="TRY">
+<kw name="Open WebApp using Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:37.279340" level="INFO">Opening browser 'Edge' to base url 'https://172.31.32.64/registration_pilot/forgot/forgot_password.php'.</msg>
+<arg>${baseURL}</arg>
+<arg>${browserName}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T22:03:37.279060" elapsed="2.305850"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T22:03:39.585120" elapsed="0.044244"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:37.278737" elapsed="2.350788"/>
+</kw>
+<kw name="InputValue">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:39.630459" level="INFO">Typing text '12456' into text field 'xpath=//*[@id="empno"]'.</msg>
+<arg>xpath=//*[@id="empno"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:39.630187" elapsed="0.204559"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:39.835266" level="INFO">Typing text 'ASDADSADASD@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:39.835014" elapsed="0.221817"/>
+</kw>
+<arg>12456</arg>
+<arg>ASDADSADASD@gmail.com</arg>
+<status status="PASS" start="2024-11-22T22:03:39.629764" elapsed="0.427244"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:40.057785" level="INFO">Clicking button 'xpath=/html/body/div[2]/div[2]/form/div[4]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/form/div[4]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:40.057603" elapsed="0.110180"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:40.057271" elapsed="0.110677"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T22:03:45.168491" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T22:03:40.168122" elapsed="5.000500"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:37.278562" elapsed="7.890155"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error</pattern>
+<kw name="Fatal Error" owner="BuiltIn">
+<doc>Stops the whole test execution.</doc>
+<status status="NOT RUN" start="2024-11-22T22:03:45.168985" elapsed="0.000048"/>
+</kw>
+<status status="NOT RUN" start="2024-11-22T22:03:45.168819" elapsed="0.000280"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T22:03:45.169305" elapsed="2.189449"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:45.169185" elapsed="2.189654"/>
+</branch>
+<status status="PASS" start="2024-11-22T22:03:37.278514" elapsed="10.080379"/>
+</try>
+<tag>EPM_FORGOT_PW_005</tag>
+<status status="PASS" start="2024-11-22T22:03:37.278150" elapsed="10.081002"/>
+</test>
+<test id="s1-t5" name="[EPM_FORGOT_PW_006]" line="63">
+<try>
+<branch type="TRY">
+<kw name="Open WebApp using Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:47.360615" level="INFO">Opening browser 'Edge' to base url 'https://172.31.32.64/registration_pilot/forgot/forgot_password.php'.</msg>
+<arg>${baseURL}</arg>
+<arg>${browserName}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T22:03:47.360391" elapsed="2.533461"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T22:03:49.894064" elapsed="0.033202"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:47.360121" elapsed="2.567294"/>
+</kw>
+<kw name="InputValue">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:49.928313" level="INFO">Typing text '99999' into text field 'xpath=//*[@id="empno"]'.</msg>
+<arg>xpath=//*[@id="empno"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:49.928043" elapsed="0.197246"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:50.125848" level="INFO">Typing text 'cruzchristiankeirre7675@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:50.125538" elapsed="0.188883"/>
+</kw>
+<arg>99999</arg>
+<arg>cruzchristiankeirre7675@gmail.com</arg>
+<status status="PASS" start="2024-11-22T22:03:49.927633" elapsed="0.386906"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-22T22:03:50.315250" level="INFO">Clicking button 'xpath=/html/body/div[2]/div[2]/form/div[4]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div[2]/form/div[4]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T22:03:50.314963" elapsed="0.112170"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:50.314717" elapsed="0.112546"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T22:03:55.427725" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T22:03:50.427410" elapsed="5.000541"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:47.359985" elapsed="8.068117"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error</pattern>
+<kw name="Fatal Error" owner="BuiltIn">
+<doc>Stops the whole test execution.</doc>
+<status status="NOT RUN" start="2024-11-22T22:03:55.428531" elapsed="0.000069"/>
+</kw>
+<status status="NOT RUN" start="2024-11-22T22:03:55.428265" elapsed="0.000442"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T22:03:55.429041" elapsed="2.169347"/>
+</kw>
+<status status="PASS" start="2024-11-22T22:03:55.428847" elapsed="2.169629"/>
+</branch>
+<status status="PASS" start="2024-11-22T22:03:47.359950" elapsed="10.238584"/>
+</try>
+<tag>EPM_FORGOT_PW_006</tag>
+<status status="PASS" start="2024-11-22T22:03:47.359666" elapsed="10.239100"/>
+</test>
+<status status="PASS" start="2024-11-22T22:03:06.598220" elapsed="51.001209"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">EPM_FORGOT_PW_001</stat>
+<stat pass="1" fail="0" skip="0">EPM_FORGOT_PW_002</stat>
+<stat pass="1" fail="0" skip="0">EPM_FORGOT_PW_003</stat>
+<stat pass="1" fail="0" skip="0">EPM_FORGOT_PW_005</stat>
+<stat pass="1" fail="0" skip="0">EPM_FORGOT_PW_006</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="ForgotPW">ForgotPW</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
